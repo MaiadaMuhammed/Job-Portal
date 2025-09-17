@@ -836,7 +836,20 @@ a.box:hover i {
     font-size: 5rem;
   }
 }
+
 @media (max-width: 768px) {
+  img {
+  max-width: 100%;
+  height: auto;
+}
+    .section-tit,
+  .section-titl,
+  .section-title {
+    padding: 8rem 2rem;
+    font-size: 3rem;
+    background-attachment: scroll; 
+  }
+  
   #menu-btn {
     display: inline-block;
   }
@@ -859,7 +872,7 @@ a.box:hover i {
     padding: 1.5rem 2rem;
   }
   .box-continer {
-    grid-template-columns: repeat(auto-fit, 16.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
   }
   a.box {
     flex-flow: column;
@@ -879,3 +892,20 @@ a.box:hover i {
     font-size: 3.5rem;
   }
 }
+@media (max-width: 375px) {
+  .home form {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    padding: 6rem 1rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
